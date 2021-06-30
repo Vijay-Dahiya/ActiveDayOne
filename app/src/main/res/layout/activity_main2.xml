@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#2F2F2F">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello AND 03"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnHello"
+        android:layout_marginTop="39dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Layouts"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:id="@+id/btnWlcm"
+        android:layout_below="@+id/btnHello"
+        />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/blue_circle"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnWlcm"
+        android:layout_marginTop="69dp"
+        android:scaleY="3"
+        android:scaleX="3"
+        android:id="@+id/blueCircle"
+        />
+    <LinearLayout
+        android:id="@+id/llt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueCircle"
+        android:layout_marginTop="118sp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loyad Dacosta"
+            android:textSize="20dp"
+            android:textColor="#FF0000"
+            android:drawableEnd="@drawable/name_1"
+
+
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age : 50"
+            android:textSize="20dp"
+            android:textColor="#FF0000"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Next"
+        android:id="@+id/loyad"
+
+        android:padding="20dp"/>
+
+    <View
+
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/loyad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="100dp"
+        android:background="#C4C4C4" />
+
+    <View
+        android:layout_width="170dp"
+        android:layout_height="20dp"
+        android:background="#C4C4C4"
+        android:layout_above="@+id/loyad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="60dp"
+        />
+    <View
+        android:layout_width="130dp"
+        android:layout_height="10dp"
+        android:background="#C4C4C4"
+        android:layout_above="@+id/loyad"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="30dp"
+        />
+
+</RelativeLayout>
